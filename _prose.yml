@@ -35,7 +35,7 @@ prose:
             label: "Indicator name"
             translation_key: metadata_fields.indicator_name
             scope: global
-      - name: "indicator"
+      - name: "indicator_number"
         field:
             element: hidden
             label: "Indicator number"
@@ -145,11 +145,11 @@ prose:
             label: "Comments and limitations"
             translation_key: metadata_fields.comments_limitations
             scope: national
-      - name: "rational_interpretation"
+      - name: "rationale_interpretation"
         field:
             element: text
-            label: "Rational and interpretation"
-            translation_key: metadata_fields.rational_interpretation
+            label: "Rationale and interpretation"
+            translation_key: metadata_fields.rationale_interpretation
             scope: national
       - name: "national_data_update_url"
         field:
@@ -210,6 +210,13 @@ prose:
             translation_key: metadata_fields.data_footnote
             help: Footnotes appear under the chart and by data tables
             scope: data
+      - name: copyright
+        field:
+            element: text
+            label: Copyright
+            translation_key: metadata_fields.copyright
+            help: Copyright appears under the chart and by data tables
+            scope: data
       - name: data_geocode_regex
         field:
             element: text
@@ -249,6 +256,8 @@ prose:
                 value: 'line'
               - name: 'bar'
                 value: 'bar'
+              - name: 'binary'
+                value: 'binary'
             scope: graph
       - name: "graph_title"
         field:
